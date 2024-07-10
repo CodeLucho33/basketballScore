@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score board</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="main-container">
-    <div class="guest-container"></div>
-    <div class="home-container"></div>
 
-</div>
+<body>
+    <div class="main-container">
+        <div class="guesthome-container">
+            <div>
+                <h2 id="fontUnique">GUEST</h2>
+            </div>
+            <div class="board-homeGuest">
+                <div>
+                    <p id="marker-guest"  class="fontMarker">0</p>
+                </div>
+                
+            </div>
+            <div class="container-buttons-guesthome">
+                <div class="btn-guest">
+                    <button onclick="add1Guest()">+ 1</button>
+                </div>
+                <div class="btn-guest">
+                    <button onclick="add2Guest()">+ 2</button>
+                </div>
+                <div class="btn-guest">
+                    <button onclick="add3Guest()">+ 3</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-reset">
+            <button onclick="restatGame()" id="hoverRed">End Game</button>
+        </div>
+        <div class="guesthome-container">
+            <div>
+                <h2 id="fontUnique">HOME</h2>
+            </div>
+            <div class="board-homeGuest">
+                <div>
+                    <p id="marker-home" class="fontMarker">0</p>
+                </div>
+            </div>
+            <div class="container-buttons-guesthome">
+                <div class="btn-home">
+                    <button onclick="add1Home()">+ 1</button>
+                </div>
+                <div class="btn-home">
+                    <button onclick="add2Home()">+ 2</button>
+                </div>
+                <div class="btn-home">
+                    <button onclick="add3Home()">+ 3</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
